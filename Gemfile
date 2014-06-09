@@ -37,12 +37,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem "devise"
+gem 'bcrypt-ruby', '~> 3.1.5'
 
 gem 'thin'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'better_errors', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

@@ -1,0 +1,15 @@
+<h2>Sign In</h2>
+
+<%= form_tag sessions_path do %>
+  <div class="field">
+    <%= label_tag :username %><br />
+    <%= text_field_tag :username, params[:username] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Sign In" %></div>
+<% end %>
+
+<%= link_to "Sign up", signup_path %>

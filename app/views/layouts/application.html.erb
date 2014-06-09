@@ -14,12 +14,11 @@
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
             <p class="navbar-text">Signed in as <%= current_user.username %></p>
-            <li><%= link_to 'My profile', edit_user_registration_path %></li>
-            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "Logout", logout_path, method: :delete %></li>
           <% else %>
             <p class="navbar-text">Not signed in</p>
-            <li><%= link_to "Sign up", new_user_registration_path %></li>
-            <li><%= link_to "Login", new_user_session_path %></li>
+            <li><%= link_to "Sign up", signup_path %></li>
+            <li><%= link_to "Login", login_path %></li>
           <% end %>
         </ul>
       </div>
