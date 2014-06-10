@@ -45,3 +45,5 @@ gem 'better_errors', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'bunny'

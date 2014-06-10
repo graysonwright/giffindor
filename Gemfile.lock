@@ -27,6 +27,7 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    amq-protocol (1.9.2)
     arel (4.0.2)
     atomic (1.1.15)
     barber (0.4.2)
@@ -42,6 +43,8 @@ GEM
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     builder (3.1.4)
+    bunny (1.2.1)
+      amq-protocol (>= 1.9.2)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -152,6 +155,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.1.5)
   better_errors
   bootstrap-sass (~> 3.1.1)
+  bunny
   coffee-rails (~> 4.0.0)
   ember-data-source (= 1.0.0.beta.7)
   ember-rails
